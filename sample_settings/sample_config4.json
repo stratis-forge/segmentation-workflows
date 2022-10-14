@@ -1,0 +1,34 @@
+{
+
+"input":{
+
+    "scan":{
+
+        "identifier" : {"imageType": "CT SCAN"},
+                
+        "crop":{
+	    			"method": "crop_pt_outline",
+				    "params": { "structureName": "generated_pt_outline",
+		                                "outStrName":"generated_pt_outline",
+		                                "saveStrToPlanCFlag": 0,
+		                                "outlineThreshold": -400},
+		             "operator": ""
+	},
+
+	"resize":{
+	                    "method" : "bilinear",
+	                    "size" : [256,256]
+                     },
+                     
+        "channels" :[{"imageType": "original", "slice": "current-1"},
+                     {"imageType": "original", "slice": "current"},
+                     {"imageType": "original", "slice": "current+1"}]
+          
+    },
+    
+    "structure": {"name": ["Mandible"]}
+},             
+
+"passedScanDim" : "2D"
+
+}

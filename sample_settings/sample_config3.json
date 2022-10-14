@@ -1,0 +1,16 @@
+{
+
+"input":{
+
+    "scan":{
+
+        "identifier" : {"imageType": "CT SCAN"},
+	"view" : ["axial", "sagittal", "coronal"]
+
+    },
+    "structure": {"name": ["Mandible"]}
+},             
+
+"passedScanDim" : "2D"
+
+}

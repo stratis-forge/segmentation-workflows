@@ -1,0 +1,19 @@
+{
+
+"input":{
+
+    "scan":{
+
+        "identifier" : {"imageType": "CT SCAN"},
+
+	"crop":[ {"method": "crop_to_str", "params" : {"structureName": "lung_contra"}, "operator" : ""},
+              	    {"method": "crop_to_str", "params" : {"structureName": "lung_ipsi"}, "operator" : "union"}
+          	  ]
+    },
+    
+    "structure": {"name": ["Heart"]}
+},             
+
+"passedScanDim" : "2D"
+
+}
